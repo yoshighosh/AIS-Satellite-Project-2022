@@ -31,7 +31,7 @@ To start preprocessing, run ```python cleanrawdata_all.py 'data'``` assuming 'da
 Files used
 > **extractcols.py** -- *Extracts columns from a CSV file into a new CSV file*
 
-> **histcol.py**
+> **histcol.py** -- *Utility file*
 
 > **extract_stated_speeds.py** -- *Extracts the speed reported by AIS into a txt file*
 
@@ -53,13 +53,41 @@ Prior to creating the metadata, make sure that you have fully run the preprocess
 
 
 ## Track Graphics
+Files Used
+> **graphics_code_color.py** -- *Plots tracks with a time gradient and key*
 
-
-
-
-## Plots of Attributes
-
-
+To download the packages need for graphics, run the following lines of code (assuming you have Anaconda Package Distributer)
+```
+conda config --prepend channels conda-forge
+conda create -n geo --strict-channel-priority geopandas jupyterlab
+```
+If this does not work, follow the instructions in this article: https://geoffboeing.com/2014/09/using-geopandas-windows/
+After installing the packages, activate the environment and run the code using the following lines of code:
+```
+conda activate geo
+python graphics_code_color.py
+```
+NOTE: Do NOT try to install geopandas using pip, it does not download all of the neccessary dependencies
 
 
 ## WEKA
+Files Used
+> **metadata.csv** -- *Stores all the metadata for the ships*
+
+> **delimited_to_weka.py** -- *Converts CSV into ARFF file*
+
+> **metadata_table_values.txt** -- *Stores the names of all the metadata columns in order*
+
+In order to convert **metadata.csv** into an ARFF file, use excel to delete all (, ), %, ', " and replace all spaces with _ . Additionally, fill all blank cells with 0 or N/A depending on the attribute type. Then run the following code in the CMD prompt.
+```
+python delimited_to_weka.py "metadata.csv" "," ship_key numeric_ship_type string_ship_type type_of_ID ratio_of_time_moving num_line_segments avg_speed std_dev_speed num_accel_points length_ship width_to_length_ratio numeric_cargo_type receiver_class num_neighbors ratio_displacement_to_distance
+```
+Then upload the resulting ARFF file into WEKA Explorer to create models. Remove ```ship_key``` and any other columns deemed unneccessary. Make sure to test models using the correct column as the class variable (ship type, receiver class, etc).
+
+## Plots of Attributes
+Files Used
+> **histcol.py** -- *Utility file*
+
+> **barplot.py** -- *Create histogram of the ship type*
+
+> **create_metadata** -- *Creates metadata file*

@@ -86,9 +86,11 @@ Then upload the resulting ARFF file into WEKA Explorer to create models. Remove 
 
 
 ## Creating a Coincidence Matrix
-> **get_coincidence_matrix.py**
+> **get_coincidence_matrix.py** -- *Creates coincidence matrix in **pairs_large.csv** storing the number of times two ships were in the same geobin, stores as ship against ship, use ship_index.csv to figure out which ship corresponds to each row/column*
 
-> **get_top_coincidences.py**
+> **get_top_coincidences.py** -- *Extract the coincidence pairs and frequency from the coincidence matrix and stores into **coincidences.csv***
+
+To get the top coincidences, first run ```python get_coincidence_matrix.py``` after ensuring you have a blank folder called 'bins' in 'data/tracks'. Then run ```python get_top_coincidences.py``` and use Excel to sort the resulting CSV file. 
 
 
 

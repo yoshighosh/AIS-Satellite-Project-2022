@@ -84,10 +84,26 @@ python delimited_to_weka.py "metadata.csv" "," ship_key numeric_ship_type string
 ```
 Then upload the resulting ARFF file into WEKA Explorer to create models. Remove ```ship_key``` and any other columns deemed unneccessary. Make sure to test models using the correct column as the class variable (ship type, receiver class, etc).
 
-## Plots of Attributes
+
+## Creating a Coincidence Matrix
+> **get_coincidence_matrix.py**
+
+> **get_top_coincidences.py**
+
+
+
+## Miscellaneous Files
 Files Used
-> **histcol.py** -- *Utility file*
+> **get_test_tracks.py** -- *Creates a copy of every 10th track in a separate directory*
+
+> **find_redundant_tracks.py** -- *Return a list of track names that are subsets of other names*
 
 > **barplot.py** -- *Create histogram of the ship type*
 
-> **create_metadata** -- *Creates metadata file*
+> **combine_cols_AIS.py** -- *Extracts a given column from all 7 raw data files and outputs the values into a CSV files*
+
+> **find_faulty_transponders.py** -- *Makes a list of ship keys that have no track data*
+
+> **quickstats_col** -- *Calculates the mean, standard deviation, max, and min for given metadata column*
+
+> **get_sizes_versus_types.py** -- *Creates a table of ship types and their average size*

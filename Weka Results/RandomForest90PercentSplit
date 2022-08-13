@@ -1,0 +1,78 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     metadata-weka.filters.unsupervised.attribute.Remove-R1-2,10,12
+Instances:    3768
+Attributes:   18
+              vessel_type
+              start_time
+              end_time
+              start_latitude
+              start_longitude
+              end_lat
+              end_long
+              distance_to_start_port
+              distance_to_end_port
+              num_line_segments
+              avg_speed
+              median_speed
+              std_speed
+              total_dist
+              std_dist
+              num_points
+              avg_time_gap
+              std_time_gap
+Test mode:    split 90.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 2.42 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.04 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         290               76.9231 %
+Incorrectly Classified Instances        87               23.0769 %
+Kappa statistic                          0.7019
+Mean absolute error                      0.0877
+Root mean squared error                  0.2013
+Relative absolute error                 49.3396 %
+Root relative squared error             67.533  %
+Total Number of Instances              377     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.158    0.000    1.000      0.158    0.273      0.389    0.831     0.313     Other
+                 0.930    0.019    0.898      0.930    0.914      0.898    0.992     0.936     Pleasure_Craft/Sailing
+                 0.111    0.000    1.000      0.111    0.200      0.330    0.647     0.170     Unknown
+                 0.000    0.000    ?          0.000    ?          ?        0.989     0.167     Military
+                 0.949    0.054    0.862      0.949    0.904      0.869    0.972     0.907     Tug_Tow
+                 0.636    0.003    0.875      0.636    0.737      0.740    0.985     0.801     Fishing
+                 0.571    0.006    0.800      0.571    0.667      0.666    0.854     0.555     Passenger
+                 0.869    0.163    0.679      0.869    0.762      0.662    0.925     0.795     Cargo
+                 0.517    0.060    0.620      0.517    0.564      0.493    0.915     0.657     Tanker
+Weighted Avg.    0.769    0.073    ?          0.769    ?          ?        0.934     0.774     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i   <-- classified as
+  3  2  0  0  7  1  0  3  3 |  a = Other
+  0 53  0  0  0  0  0  4  0 |  b = Pleasure_Craft/Sailing
+  0  1  1  0  4  0  0  3  0 |  c = Unknown
+  0  0  0  0  0  0  0  1  0 |  d = Military
+  0  1  0  0 94  0  0  2  2 |  e = Tug_Tow
+  0  0  0  0  1  7  0  1  2 |  f = Fishing
+  0  2  0  0  1  0  8  3  0 |  g = Passenger
+  0  0  0  0  1  0  1 93 12 |  h = Cargo
+  0  0  0  0  1  0  1 27 31 |  i = Tanker
+

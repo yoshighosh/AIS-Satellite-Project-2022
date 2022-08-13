@@ -1,0 +1,17 @@
+metadata column values
+
+0: ship key
+1: numeric ship type
+2: ship type in string format
+3: type of ID (IMO, call sign, or MMSI)
+4: ratio of total time the ship is moving (excluding time gaps) to total time in a week
+5: number of line segments (logistic function)
+6: mean speed (logistic function)
+7: standard deviation in speed (logistic function)
+8: number of acceleration points (logistic function)
+9: length of ship (logistic function)
+10: ratio of width of ship to length of ship
+11: numeric cargo type
+12: receiver class
+13: logarithm of the average number of neighbors in ship tracks (logistic function)
+14: ratio of displacement to total distance traveled

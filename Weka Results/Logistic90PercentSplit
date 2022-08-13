@@ -1,0 +1,120 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     metadata-weka.filters.unsupervised.attribute.Remove-R1-2,10,12
+Instances:    3768
+Attributes:   18
+              vessel_type
+              start_time
+              end_time
+              start_latitude
+              start_longitude
+              end_lat
+              end_long
+              distance_to_start_port
+              distance_to_end_port
+              num_line_segments
+              avg_speed
+              median_speed
+              std_speed
+              total_dist
+              std_dist
+              num_points
+              avg_time_gap
+              std_time_gap
+Test mode:    split 90.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                           Class
+Variable                                   Other  Pleasure_Craft/Sailing                 Unknown                Military                 Tug_Tow                 Fishing               Passenger                   Cargo
+========================================================================================================================================================================================================================
+start_time                                     0                      -0                       0                       0                      -0                      -0                      -0                       0
+end_time                                      -0                      -0                      -0                      -0                       0                       0                       0                      -0
+start_latitude                           -0.0491                  0.2688                  0.0381                 -0.2727                  0.0157                 -0.0025                 -0.0854                  0.0302
+start_longitude                           0.0236                    0.07                 -0.0039                 -0.0602                 -0.0272                 -0.0165                 -0.0043                 -0.0127
+end_lat                                   0.0499                 -0.2726                 -0.0313                  0.2668                  0.1168                  0.0566                 -0.0354                  0.0403
+end_long                                 -0.0244                 -0.0604                  0.0129                  0.0496                  0.0235                 -0.0123                  0.0199                  0.0102
+distance_to_start_port                   -0.0029                 -0.0076                 -0.0001                 -0.0095                 -0.0049                 -0.0124                 -0.0002                       0
+distance_to_end_port                     -0.0014                 -0.0069                       0                 -0.0088                 -0.0033                  -0.002                 -0.0001                       0
+num_line_segments                        -0.3423                 -0.5013                 -0.4674                  0.0847                 -0.1514                  -0.568                 -0.3774                 -0.0262
+avg_speed                                 0.0994                  0.1801                 -0.0148                  0.7301                  -0.128                  0.4972                  0.1703                  0.2895
+median_speed                             -0.2332                 -0.3058                 -0.1389                 -0.6945                 -0.0894                 -0.5904                 -0.0919                  -0.235
+std_speed                                 0.2475                   0.203                  0.2173                  0.0828                 -0.7481                 -0.1228                  0.1935                  0.0936
+total_dist                               -0.0005                 -0.0003                       0                 -0.0013                 -0.0001                 -0.0011                  0.0001                  0.0003
+std_dist                                 -0.0006                 -0.0012                 -0.0008                 -0.0224                  0.0125                  0.0009                 -0.0022                 -0.0029
+num_points                               -0.0013                 -0.0026                  -0.001                 -0.0027                 -0.0014                 -0.0017                 -0.0011                 -0.0007
+avg_time_gap                              0.0015                  0.0011                  0.0015                  0.0015                  0.0013                   0.001                  0.0012                  0.0009
+std_time_gap                              0.0001                 -0.0001                       0                 -0.0021                 -0.0111                  0.0001                 -0.0022                       0
+Intercept                              -441.3475                3471.131              -1205.9795              -2731.7194               1315.4439               1986.5961              -3343.0619               -469.1082
+
+
+Odds Ratios...
+                                           Class
+Variable                                   Other  Pleasure_Craft/Sailing                 Unknown                Military                 Tug_Tow                 Fishing               Passenger                   Cargo
+========================================================================================================================================================================================================================
+start_time                                     1                       1                       1                       1                       1                       1                       1                       1
+end_time                                       1                       1                       1                       1                       1                       1                       1                       1
+start_latitude                            0.9521                  1.3084                  1.0388                  0.7614                  1.0158                  0.9975                  0.9182                  1.0306
+start_longitude                           1.0239                  1.0725                  0.9961                  0.9416                  0.9732                  0.9836                  0.9957                  0.9874
+end_lat                                   1.0512                  0.7614                  0.9692                  1.3058                  1.1239                  1.0582                  0.9652                  1.0412
+end_long                                  0.9759                  0.9413                   1.013                  1.0508                  1.0238                  0.9878                  1.0201                  1.0102
+distance_to_start_port                    0.9971                  0.9924                  0.9999                  0.9906                  0.9951                  0.9876                  0.9998                       1
+distance_to_end_port                      0.9986                  0.9931                       1                  0.9913                  0.9967                   0.998                  0.9999                       1
+num_line_segments                         0.7102                  0.6057                  0.6266                  1.0884                  0.8595                  0.5667                  0.6856                  0.9741
+avg_speed                                 1.1045                  1.1973                  0.9853                  2.0752                  0.8798                  1.6442                  1.1857                  1.3358
+median_speed                               0.792                  0.7365                  0.8703                  0.4993                  0.9145                  0.5541                  0.9122                  0.7906
+std_speed                                 1.2808                   1.225                  1.2428                  1.0864                  0.4733                  0.8844                  1.2135                  1.0981
+total_dist                                0.9995                  0.9997                       1                  0.9987                  0.9999                  0.9989                  1.0001                  1.0003
+std_dist                                  0.9994                  0.9988                  0.9992                  0.9779                  1.0125                  1.0009                  0.9978                  0.9971
+num_points                                0.9987                  0.9974                   0.999                  0.9973                  0.9986                  0.9983                  0.9989                  0.9993
+avg_time_gap                              1.0015                  1.0011                  1.0015                  1.0015                  1.0013                   1.001                  1.0012                  1.0009
+std_time_gap                              1.0001                  0.9999                       1                  0.9979                   0.989                  1.0001                  0.9978                       1
+
+
+Time taken to build model: 2.73 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         232               61.5385 %
+Incorrectly Classified Instances       145               38.4615 %
+Kappa statistic                          0.4935
+Mean absolute error                      0.1156
+Root mean squared error                  0.2416
+Relative absolute error                 65.0599 %
+Root relative squared error             81.0579 %
+Total Number of Instances              377     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.053    0.006    0.333      0.053    0.091      0.116    0.764     0.174     Other
+                 0.684    0.078    0.609      0.684    0.645      0.578    0.899     0.633     Pleasure_Craft/Sailing
+                 0.000    0.000    ?          0.000    ?          ?        0.618     0.070     Unknown
+                 0.000    0.003    0.000      0.000    0.000      -0.003   0.644     0.007     Military
+                 0.919    0.086    0.791      0.919    0.850      0.796    0.967     0.899     Tug_Tow
+                 0.000    0.005    0.000      0.000    0.000      -0.013   0.823     0.160     Fishing
+                 0.071    0.006    0.333      0.071    0.118      0.140    0.827     0.216     Passenger
+                 0.832    0.278    0.543      0.832    0.657      0.504    0.863     0.656     Cargo
+                 0.183    0.044    0.440      0.183    0.259      0.205    0.793     0.335     Tanker
+Weighted Avg.    0.615    0.121    ?          0.615    ?          ?        0.871     0.594     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i   <-- classified as
+  1  5  0  0  8  0  0  4  1 |  a = Other
+  0 39  0  1  7  0  0 10  0 |  b = Pleasure_Craft/Sailing
+  0  1  0  0  4  0  0  4  0 |  c = Unknown
+  0  0  0  0  0  0  0  1  0 |  d = Military
+  0  0  0  0 91  2  0  5  1 |  e = Tug_Tow
+  0  6  0  0  2  0  0  2  1 |  f = Fishing
+  0  2  0  0  1  0  1  7  3 |  g = Passenger
+  2  4  0  0  2  0  2 89  8 |  h = Cargo
+  0  7  0  0  0  0  0 42 11 |  i = Tanker
+

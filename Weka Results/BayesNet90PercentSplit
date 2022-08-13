@@ -1,0 +1,101 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     metadata-weka.filters.unsupervised.attribute.Remove-R1-2,10,12
+Instances:    3768
+Attributes:   18
+              vessel_type
+              start_time
+              end_time
+              start_latitude
+              start_longitude
+              end_lat
+              end_long
+              distance_to_start_port
+              distance_to_end_port
+              num_line_segments
+              avg_speed
+              median_speed
+              std_speed
+              total_dist
+              std_dist
+              num_points
+              avg_time_gap
+              std_time_gap
+Test mode:    split 90.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=18 #classindex=0
+Network structure (nodes followed by parents)
+vessel_type(9): 
+start_time(9): vessel_type 
+end_time(5): vessel_type 
+start_latitude(6): vessel_type 
+start_longitude(13): vessel_type 
+end_lat(8): vessel_type 
+end_long(13): vessel_type 
+distance_to_start_port(5): vessel_type 
+distance_to_end_port(3): vessel_type 
+num_line_segments(2): vessel_type 
+avg_speed(9): vessel_type 
+median_speed(11): vessel_type 
+std_speed(8): vessel_type 
+total_dist(6): vessel_type 
+std_dist(4): vessel_type 
+num_points(4): vessel_type 
+avg_time_gap(4): vessel_type 
+std_time_gap(6): vessel_type 
+LogScore Bayes: -97627.36790800147
+LogScore BDeu: -101359.6171851909
+LogScore MDL: -100786.05349296704
+LogScore ENTROPY: -97084.73580672155
+LogScore AIC: -97983.73580672155
+
+
+Time taken to build model: 0.14 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         265               70.2918 %
+Incorrectly Classified Instances       112               29.7082 %
+Kappa statistic                          0.623 
+Mean absolute error                      0.075 
+Root mean squared error                  0.231 
+Relative absolute error                 42.2128 %
+Root relative squared error             77.4974 %
+Total Number of Instances              377     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.211    0.025    0.308      0.211    0.250      0.222    0.800     0.253     Other
+                 0.877    0.019    0.893      0.877    0.885      0.865    0.986     0.920     Pleasure_Craft/Sailing
+                 0.000    0.005    0.000      0.000    0.000      -0.011   0.600     0.053     Unknown
+                 0.000    0.000    ?          0.000    ?          ?        0.894     0.024     Military
+                 0.879    0.061    0.837      0.879    0.857      0.805    0.970     0.897     Tug_Tow
+                 0.727    0.005    0.800      0.727    0.762      0.756    0.945     0.720     Fishing
+                 0.429    0.019    0.462      0.429    0.444      0.424    0.848     0.329     Passenger
+                 0.720    0.137    0.675      0.720    0.697      0.572    0.893     0.725     Cargo
+                 0.550    0.101    0.508      0.550    0.528      0.435    0.871     0.536     Tanker
+Weighted Avg.    0.703    0.076    ?          0.703    ?          ?        0.912     0.713     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i   <-- classified as
+  4  2  0  0  7  2  0  2  2 |  a = Other
+  0 50  0  0  3  0  0  3  1 |  b = Pleasure_Craft/Sailing
+  0  1  0  0  4  0  1  2  1 |  c = Unknown
+  0  0  0  0  0  0  0  1  0 |  d = Military
+  5  1  2  0 87  0  0  2  2 |  e = Tug_Tow
+  0  0  0  0  1  8  0  1  1 |  f = Fishing
+  1  2  0  0  1  0  6  2  2 |  g = Passenger
+  1  0  0  0  1  0  5 77 23 |  h = Cargo
+  2  0  0  0  0  0  1 24 33 |  i = Tanker
+

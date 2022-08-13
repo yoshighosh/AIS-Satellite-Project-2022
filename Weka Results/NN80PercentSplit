@@ -1,0 +1,505 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     metadata-weka.filters.unsupervised.attribute.Remove-R1-2,10,12
+Instances:    3768
+Attributes:   18
+              vessel_type
+              start_time
+              end_time
+              start_latitude
+              start_longitude
+              end_lat
+              end_long
+              distance_to_start_port
+              distance_to_end_port
+              num_line_segments
+              avg_speed
+              median_speed
+              std_speed
+              total_dist
+              std_dist
+              num_points
+              avg_time_gap
+              std_time_gap
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -6.191201891321306
+    Node 9    0.20422046878991704
+    Node 10    0.4315625683826727
+    Node 11    -2.4761353109883175
+    Node 12    -0.25675769975683765
+    Node 13    1.2501929225722335
+    Node 14    0.8206526265717082
+    Node 15    1.3507810952181574
+    Node 16    -1.7107239572374118
+    Node 17    -0.651172542991741
+    Node 18    0.7889409829497095
+    Node 19    -2.9442560240645577
+    Node 20    2.29688817511076
+    Node 21    1.0272186781371502
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -2.203038912406152
+    Node 9    -5.42776415514635
+    Node 10    0.4481209846299708
+    Node 11    7.210662921389724
+    Node 12    -3.7479978227544537
+    Node 13    4.1965080946813575
+    Node 14    -4.076770923453999
+    Node 15    3.6544006999297136
+    Node 16    -1.7562710229701257
+    Node 17    -4.018174273445233
+    Node 18    -5.695648303028061
+    Node 19    -4.515217419435156
+    Node 20    -7.488806529574398
+    Node 21    -4.005490207945806
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -4.389352616543948
+    Node 9    -1.0074773117220226
+    Node 10    0.8790936267078748
+    Node 11    -0.17168757084069677
+    Node 12    0.24731048126096336
+    Node 13    -1.0097839042639751
+    Node 14    1.6047586764462285
+    Node 15    2.1419693225432432
+    Node 16    0.6336810396766074
+    Node 17    -0.39902845600534836
+    Node 18    -0.8793560322167577
+    Node 19    -1.7683944652289352
+    Node 20    -1.0554943392904597
+    Node 21    0.6238069024631738
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -4.200569929228856
+    Node 9    -0.863752095360702
+    Node 10    -1.0206228521873442
+    Node 11    -0.914977481962708
+    Node 12    -1.040569269669684
+    Node 13    -1.5234071476103523
+    Node 14    -0.9881918260619882
+    Node 15    -1.6259917844388554
+    Node 16    -0.7634613053051265
+    Node 17    -1.2889371313002531
+    Node 18    -0.8916557284536976
+    Node 19    -0.8687516602889656
+    Node 20    -1.2957451725419253
+    Node 21    -0.6827232676866188
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.711916956032965
+    Node 9    -5.759830614006047
+    Node 10    2.6329083253296526
+    Node 11    -8.148639837099886
+    Node 12    -1.7251509335821573
+    Node 13    -2.2487150491795997
+    Node 14    -6.002612010657818
+    Node 15    3.666344396713129
+    Node 16    -2.5800322779015663
+    Node 17    0.24791727138118086
+    Node 18    1.0627445202115737
+    Node 19    -3.8821782804981226
+    Node 20    3.3176277553455167
+    Node 21    -1.2753442451460217
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -12.823138066154954
+    Node 9    -7.326888610462664
+    Node 10    -5.744028149698936
+    Node 11    -5.562812944319198
+    Node 12    4.160303567176935
+    Node 13    3.3079791624259642
+    Node 14    7.573935262589463
+    Node 15    5.933748959363662
+    Node 16    -8.967017780024886
+    Node 17    0.0526020358440124
+    Node 18    7.375002913800023
+    Node 19    -3.4832849174082723
+    Node 20    0.7593443476099407
+    Node 21    -4.530542695688579
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -4.583223120447081
+    Node 9    -3.3217611456614247
+    Node 10    5.704673991209892
+    Node 11    -1.797138579283135
+    Node 12    1.3553222737208994
+    Node 13    1.4308321004469604
+    Node 14    4.129568374210957
+    Node 15    -14.291499606025749
+    Node 16    -6.63133608622967
+    Node 17    -0.9761544163592683
+    Node 18    -2.461808495009177
+    Node 19    -1.373401925345908
+    Node 20    -1.3038987318166402
+    Node 21    -7.025722809405022
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    1.019662775842442
+    Node 9    1.5335342664178488
+    Node 10    -2.02169151108982
+    Node 11    3.2486462695905693
+    Node 12    0.5572314326443164
+    Node 13    -2.274365715383013
+    Node 14    -2.788577511849455
+    Node 15    -2.9135691467335927
+    Node 16    1.9693782849010977
+    Node 17    0.7397164075569164
+    Node 18    -1.624011396046145
+    Node 19    4.808697215082944
+    Node 20    -1.6910162372975135
+    Node 21    1.8223380813863959
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -3.7277191805863334
+    Node 9    0.3183819773716685
+    Node 10    -2.752126229052435
+    Node 11    -3.2268109392744093
+    Node 12    2.600629415788667
+    Node 13    1.1090252431989958
+    Node 14    1.515464678704976
+    Node 15    -3.027793971002911
+    Node 16    1.4217579908172109
+    Node 17    0.06295010516262456
+    Node 18    3.480746405853689
+    Node 19    -2.129186699450121
+    Node 20    1.8182783885941003
+    Node 21    -1.7443804089099693
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    4.543768123787542
+    Attrib start_time    2.350560859969916
+    Attrib end_time    -1.0250248872354852
+    Attrib start_latitude    11.351734618708228
+    Attrib start_longitude    -2.8873585222046194
+    Attrib end_lat    -18.006471491397487
+    Attrib end_long    6.587033745406277
+    Attrib distance_to_start_port    0.889154739945823
+    Attrib distance_to_end_port    4.077327547801025
+    Attrib num_line_segments    -7.416634551386382
+    Attrib avg_speed    1.0917243401453223
+    Attrib median_speed    -1.3038342196654453
+    Attrib std_speed    -7.90058165284016
+    Attrib total_dist    14.588374117825785
+    Attrib std_dist    1.0131050250573799
+    Attrib num_points    4.574772050421625
+    Attrib avg_time_gap    -7.127902584706139
+    Attrib std_time_gap    2.109180131750635
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    7.337602145269323
+    Attrib start_time    2.5264547852338612
+    Attrib end_time    0.9257550681593871
+    Attrib start_latitude    -9.785610984483062
+    Attrib start_longitude    -0.12567973131359506
+    Attrib end_lat    1.515649427488708
+    Attrib end_long    9.153323499571494
+    Attrib distance_to_start_port    -8.72350315770882
+    Attrib distance_to_end_port    -8.787394556021475
+    Attrib num_line_segments    0.350007365752775
+    Attrib avg_speed    7.669179774337857
+    Attrib median_speed    7.670689765284061
+    Attrib std_speed    2.4530897750074185
+    Attrib total_dist    12.772874162913984
+    Attrib std_dist    -1.4786357004048982
+    Attrib num_points    9.851418845298308
+    Attrib avg_time_gap    -3.247026293467138
+    Attrib std_time_gap    -7.256987691966323
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -3.9479668836972994
+    Attrib start_time    -1.8515416572810157
+    Attrib end_time    0.4026030991298241
+    Attrib start_latitude    2.2039248456933764
+    Attrib start_longitude    -30.37742308792268
+    Attrib end_lat    -10.25101305142255
+    Attrib end_long    -28.12234662619778
+    Attrib distance_to_start_port    6.1236737384941495
+    Attrib distance_to_end_port    2.4758523521284324
+    Attrib num_line_segments    -2.0825360457340416
+    Attrib avg_speed    7.428020137280234
+    Attrib median_speed    6.574461093739922
+    Attrib std_speed    16.008280147855043
+    Attrib total_dist    4.083789944654179
+    Attrib std_dist    -3.686935402881316
+    Attrib num_points    -4.900963120937827
+    Attrib avg_time_gap    1.0154209605950915
+    Attrib std_time_gap    3.780433411508137
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -0.2660428194651735
+    Attrib start_time    -0.8124144580886059
+    Attrib end_time    -0.026689069621123024
+    Attrib start_latitude    -8.81343839295582
+    Attrib start_longitude    -24.527608968168334
+    Attrib end_lat    -12.428808676393782
+    Attrib end_long    -32.24051615654357
+    Attrib distance_to_start_port    2.855772698574647
+    Attrib distance_to_end_port    4.763731602335903
+    Attrib num_line_segments    2.957767841658317
+    Attrib avg_speed    -1.0187758059938694
+    Attrib median_speed    -3.197275381833049
+    Attrib std_speed    -5.988923590312749
+    Attrib total_dist    24.21223154093615
+    Attrib std_dist    3.9562544581727157
+    Attrib num_points    13.137036455485841
+    Attrib avg_time_gap    -12.241595047443095
+    Attrib std_time_gap    1.3813035494324741
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    0.42909878557675785
+    Attrib start_time    -0.5252976047336985
+    Attrib end_time    1.0935604442627669
+    Attrib start_latitude    1.441864052314679
+    Attrib start_longitude    7.8380643834593196
+    Attrib end_lat    -21.775285504032066
+    Attrib end_long    8.743490076558864
+    Attrib distance_to_start_port    -1.8677179236405044
+    Attrib distance_to_end_port    -2.2358700559993587
+    Attrib num_line_segments    -7.497503585083549
+    Attrib avg_speed    5.831024297301025
+    Attrib median_speed    4.6856094442640295
+    Attrib std_speed    7.78656513108707
+    Attrib total_dist    -9.522020085296795
+    Attrib std_dist    0.5235211884135678
+    Attrib num_points    -14.863960847618555
+    Attrib avg_time_gap    -4.144115731697318
+    Attrib std_time_gap    0.09626827442770919
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -4.748005809354925
+    Attrib start_time    4.046787328124179
+    Attrib end_time    -2.3913832227694787
+    Attrib start_latitude    -7.112824157705329
+    Attrib start_longitude    -4.866598131731599
+    Attrib end_lat    -10.180996034278552
+    Attrib end_long    -12.233710648495967
+    Attrib distance_to_start_port    2.897232931101346
+    Attrib distance_to_end_port    4.145786483368411
+    Attrib num_line_segments    -3.26914585561057
+    Attrib avg_speed    -1.528455393155105
+    Attrib median_speed    -2.0826826387497075
+    Attrib std_speed    4.675746051449085
+    Attrib total_dist    2.72645780005617
+    Attrib std_dist    1.3806637676910363
+    Attrib num_points    9.08886869582426
+    Attrib avg_time_gap    0.6136740017001806
+    Attrib std_time_gap    -2.98086625597942
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -29.927290873560587
+    Attrib start_time    -0.3899423548192178
+    Attrib end_time    -0.22282817260487076
+    Attrib start_latitude    2.339398582756432
+    Attrib start_longitude    -0.5314701933845302
+    Attrib end_lat    -0.5576607299011789
+    Attrib end_long    -2.8525638453472317
+    Attrib distance_to_start_port    8.892983726378702
+    Attrib distance_to_end_port    3.675838058792683
+    Attrib num_line_segments    0.43643021562993983
+    Attrib avg_speed    -40.6604741088115
+    Attrib median_speed    -49.63001100412122
+    Attrib std_speed    0.3644871962962535
+    Attrib total_dist    -6.583593871927579
+    Attrib std_dist    16.098505215608856
+    Attrib num_points    -10.680250921756732
+    Attrib avg_time_gap    14.484240199647042
+    Attrib std_time_gap    30.87560028159601
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    2.256759570615194
+    Attrib start_time    4.365206267956961
+    Attrib end_time    1.5014445049301937
+    Attrib start_latitude    -13.747862590741322
+    Attrib start_longitude    6.137680659423594
+    Attrib end_lat    10.687761800935471
+    Attrib end_long    7.69773537851043
+    Attrib distance_to_start_port    -0.8862921098996268
+    Attrib distance_to_end_port    0.2413358121767801
+    Attrib num_line_segments    0.01921072383494351
+    Attrib avg_speed    -1.9928525246129227
+    Attrib median_speed    -3.746443901670894
+    Attrib std_speed    -3.9865359823057593
+    Attrib total_dist    1.9915861736216531
+    Attrib std_dist    2.01665267965356
+    Attrib num_points    6.385959728743373
+    Attrib avg_time_gap    -0.9926968293072292
+    Attrib std_time_gap    2.912122534834085
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    2.0688849835261465
+    Attrib start_time    -0.9384051079107962
+    Attrib end_time    0.41269053097676794
+    Attrib start_latitude    -11.719127418028448
+    Attrib start_longitude    6.2681534191093755
+    Attrib end_lat    25.021536263467013
+    Attrib end_long    9.600440850220396
+    Attrib distance_to_start_port    1.5024170714599983
+    Attrib distance_to_end_port    1.8452230159165877
+    Attrib num_line_segments    -6.660060130707291
+    Attrib avg_speed    3.632041549388741
+    Attrib median_speed    3.1819928079773683
+    Attrib std_speed    -4.958351458557697
+    Attrib total_dist    9.210064466924628
+    Attrib std_dist    -5.910361007120729
+    Attrib num_points    10.03131153180551
+    Attrib avg_time_gap    -8.382009540875051
+    Attrib std_time_gap    -2.0693286195846206
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    0.210783005015736
+    Attrib start_time    0.9650787261201266
+    Attrib end_time    -0.2934946801614226
+    Attrib start_latitude    4.192103115383685
+    Attrib start_longitude    16.119091168503452
+    Attrib end_lat    22.227460700984654
+    Attrib end_long    22.510926729013722
+    Attrib distance_to_start_port    1.5332609810643847
+    Attrib distance_to_end_port    2.54264170147524
+    Attrib num_line_segments    3.419244381528171
+    Attrib avg_speed    -5.782822282134248
+    Attrib median_speed    -5.31682137414687
+    Attrib std_speed    -4.151810145199066
+    Attrib total_dist    4.388344256068871
+    Attrib std_dist    2.870103522545469
+    Attrib num_points    -4.3995160514138565
+    Attrib avg_time_gap    -5.433227187644143
+    Attrib std_time_gap    2.6254527999873556
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    4.908863305957926
+    Attrib start_time    0.5523633306168794
+    Attrib end_time    -2.195297118334497
+    Attrib start_latitude    11.310751554083735
+    Attrib start_longitude    15.828396814532635
+    Attrib end_lat    8.636284071757562
+    Attrib end_long    14.48266697951235
+    Attrib distance_to_start_port    -1.367783190004197
+    Attrib distance_to_end_port    -9.819196094808603
+    Attrib num_line_segments    8.312010415246935
+    Attrib avg_speed    7.2547355060047
+    Attrib median_speed    9.381892597932657
+    Attrib std_speed    1.1433629973102708
+    Attrib total_dist    5.29893571976896
+    Attrib std_dist    -6.703688855402077
+    Attrib num_points    -0.5727549235275985
+    Attrib avg_time_gap    4.939451104357504
+    Attrib std_time_gap    -5.455034660950947
+Sigmoid Node 20
+    Inputs    Weights
+    Threshold    -6.642988452613835
+    Attrib start_time    -0.342319958843204
+    Attrib end_time    -0.04659769399757677
+    Attrib start_latitude    -4.881250948723847
+    Attrib start_longitude    -31.2933196916805
+    Attrib end_lat    5.25189906596722
+    Attrib end_long    -26.855813020839857
+    Attrib distance_to_start_port    5.265594541996749
+    Attrib distance_to_end_port    9.276243322521141
+    Attrib num_line_segments    1.0002937343298324
+    Attrib avg_speed    -10.81968880391389
+    Attrib median_speed    -6.599818784855948
+    Attrib std_speed    -5.438308663578564
+    Attrib total_dist    9.634645093223687
+    Attrib std_dist    9.486309291917513
+    Attrib num_points    0.005721018001548167
+    Attrib avg_time_gap    7.14333588735505
+    Attrib std_time_gap    7.498982629506209
+Sigmoid Node 21
+    Inputs    Weights
+    Threshold    3.0252757069888565
+    Attrib start_time    9.238079742680164
+    Attrib end_time    -8.613547633469913
+    Attrib start_latitude    -10.649678575098182
+    Attrib start_longitude    3.49838452381916
+    Attrib end_lat    17.821769838430146
+    Attrib end_long    0.2150674452965565
+    Attrib distance_to_start_port    2.4118574879157655
+    Attrib distance_to_end_port    3.7986596637143513
+    Attrib num_line_segments    1.1828273243149974
+    Attrib avg_speed    -2.353315871011056
+    Attrib median_speed    -4.954564648894912
+    Attrib std_speed    -7.596030168083539
+    Attrib total_dist    5.299178774945808
+    Attrib std_dist    -3.111374792963147
+    Attrib num_points    11.694299898490813
+    Attrib avg_time_gap    -8.536838282317555
+    Attrib std_time_gap    4.405885586184003
+Class Other
+    Input
+    Node 0
+Class Pleasure_Craft/Sailing
+    Input
+    Node 1
+Class Unknown
+    Input
+    Node 2
+Class Military
+    Input
+    Node 3
+Class Tug_Tow
+    Input
+    Node 4
+Class Fishing
+    Input
+    Node 5
+Class Passenger
+    Input
+    Node 6
+Class Cargo
+    Input
+    Node 7
+Class Tanker
+    Input
+    Node 8
+
+
+Time taken to build model: 10.67 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         509               67.5066 %
+Incorrectly Classified Instances       245               32.4934 %
+Kappa statistic                          0.5786
+Mean absolute error                      0.0912
+Root mean squared error                  0.2285
+Relative absolute error                 51.3189 %
+Root relative squared error             76.6923 %
+Total Number of Instances              754     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.179    0.006    0.636      0.179    0.280      0.321    0.735     0.266     Other
+                 0.846    0.044    0.780      0.846    0.811      0.776    0.961     0.811     Pleasure_Craft/Sailing
+                 0.000    0.000    ?          0.000    ?          ?        0.611     0.038     Unknown
+                 0.000    0.000    ?          0.000    ?          ?        0.487     0.004     Military
+                 0.878    0.083    0.779      0.878    0.826      0.765    0.955     0.868     Tug_Tow
+                 0.667    0.010    0.667      0.667    0.667      0.657    0.905     0.626     Fishing
+                 0.194    0.011    0.429      0.194    0.267      0.268    0.753     0.238     Passenger
+                 0.799    0.211    0.615      0.799    0.695      0.552    0.878     0.731     Cargo
+                 0.342    0.061    0.494      0.342    0.404      0.330    0.888     0.527     Tanker
+Weighted Avg.    0.675    0.100    ?          0.675    ?          ?        0.892     0.680     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   <-- classified as
+   7   5   0   0  18   2   0   4   3 |   a = Other
+   0  99   0   0   2   1   0  15   0 |   b = Pleasure_Craft/Sailing
+   0   3   0   0  11   0   0   5   1 |   c = Unknown
+   0   0   0   0   0   0   0   2   0 |   d = Military
+   2   6   0   0 166   4   1   7   3 |   e = Tug_Tow
+   0   1   0   0   3  14   0   2   1 |   f = Fishing
+   1   7   0   0   1   0   6   8   8 |   g = Passenger
+   1   6   0   0  11   0   4 179  23 |   h = Cargo
+   0   0   0   0   1   0   3  69  38 |   i = Tanker
+
